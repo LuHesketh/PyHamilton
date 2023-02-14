@@ -2,7 +2,8 @@
 Created on Tue Jan 17 09:18:09 2023
 
 @author: Luiza
-"""
+
+import pyhamilton
 from pyhamilton import (HamiltonInterface,  LayoutManager, 
  Plate96, Tip96, initialize, tip_pick_up, tip_eject, oemerr, resource_list_with_prefix)
 
@@ -24,7 +25,6 @@ class TipRack:
         tips = self.get_tips(num_tips)
         return tips
 
-num_samples = 20 #change it to variable
 
 
 lmgr = LayoutManager('deck.lay')
